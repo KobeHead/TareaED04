@@ -1,47 +1,47 @@
 package inventario;
 
 public class Producto {
-    private String n;
-    private double p;
-    private int s;
+    private String nombre;
+    private double precio;
+    private int stock;
 
     public Producto(String nombre, double precio, int stock) {
-        this.n = nombre;
-        this.p = precio;
-        this.s = stock;
+        this.nombre = nombre;
+        this.precio = precio;
+        this.stock = stock;
     }
 
     public void mostrarInformacion() {
-        System.out.println("Producto: " + getN() + " | Precio: " + getP() + " | Stock: " + getS());
+        System.out.println("Producto: " + getNombre() + " | Precio: " + getPrecio() + " | Stock: " + getStock());
     }
 
     public void borrarDatos() {
-        setN("");
-        setP(0.0);
-        setS(0);
+        setNombre("");
+        setPrecio(0.0);
+        setStock(0);
     }
 
-    public String getN() {
-        return n;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setN(String n) {
-        this.n = n;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public double getP() {
-        return p;
+    public double getPrecio() {
+        return precio;
     }
 
-    public void setP(double p) {
-        this.p = p;
+    public void setPrecio(double precio) {
+        this.precio = precio;
     }
 
-    public int getS() {
-        return s;
+    public int getStock() {
+        return stock;
     }
 
-    public void setS(int s) {
-        this.s = s;
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 }
